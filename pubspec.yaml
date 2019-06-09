@@ -2,8 +2,8 @@ name: beauty_navigation
 description: A beautiful navigation bar to use in flutter
 version: 0.0.1
 author: hipoojan<pandyapoojan1@gmail.com>
-homepage:
-  
+homepage: https://github.com/hipoojan/BeautyNavigation
+
 
 environment:
   sdk: ">=2.1.0 <3.0.0"

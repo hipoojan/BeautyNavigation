@@ -1,16 +1,56 @@
-# example
+![Version](../assets/version.svg)
+## Usage
 
-A new Flutter application.
+#### **Add the Widget to Bottom Navigation bar in Scaffold**
+**NOTE: Minimum Items is 2 and Maximum is 4 in-order to keep the bar Beautiful**
 
-## Getting Started
+```dart
+return Scaffold(
+        body: Container(),
+        bottomNavigationBar: BeautyNavigation(
+          items: <Items>[
+            Items(
+              icon: Icon(Icons.airline_seat_flat),
+              tabName: 'Sleep',
+              onClick: () {
+                print('Sleep');
+              },
+            ),
+            Items(
+              icon: Icon(Icons.wifi_tethering),
+              tabName: 'Wifi',
+              onClick: () {
+                print('Wifi');
+              },
+            ),
+            Items(
+              icon: Icon(Icons.adjust),
+              tabName: 'Adjust',
+              onClick: () {
+                print('Adjust');
+              },
+            ),
+            Items(
+              icon: Icon(Icons.cake),
+              tabName: 'Cake',
+              onClick: () {
+                print('Cake');
+              },
+            )
+          ],
+        ));
+```
 
-This project is a starting point for a Flutter application.
+#### **More Options to customize the navigation bar**
+*All the values below are **default***
 
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
-
-For help getting started with Flutter, view our 
-[online documentation](https://flutter.dev/docs), which offers tutorials, 
-samples, guidance on mobile development, and a full API reference.
+```dart
+bottomNavigationBar: BeautyNavigation(
+          activeIconColor: Colors.deepOrangeAccent,
+          inactiveIconColor: Colors.white,
+          animationDuration: Duration(milliseconds: 500),
+          circleColor: Colors.white,
+          backgroundColor: Colors.indigo,
+          height: 100,
+)
+```
